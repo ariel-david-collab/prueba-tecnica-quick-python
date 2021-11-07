@@ -3,6 +3,12 @@
 ¡You can run the project soon!, 
 only needs install first:
 
+- Clone the project:
+
+```
+git clone https://github.com/ariel-david-collab/prueba-tecnica-quick-python.git
+```
+
 - Python 3.9.4:
 
     > can install in the [official page](https://www.python.org/downloads/)
