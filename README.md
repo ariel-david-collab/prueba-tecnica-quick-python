@@ -13,10 +13,6 @@ git clone https://github.com/ariel-david-collab/prueba-tecnica-quick-python.git
 
     > can install in the [official page](https://www.python.org/downloads/)
 
-- PostgreSQL 14:
-
-    > [official page](https://content-www.enterprisedb.com/downloads/postgres-postgresql-downloads)
-
 - Django - in the command prompt:
     ```
     > pip install Django
@@ -32,27 +28,6 @@ git clone https://github.com/ariel-david-collab/prueba-tecnica-quick-python.git
     > pip install django-filter
     ```
 
-- PostgreSQL for Django:
-    ```
-    > pip install psycop2
-    ```
-
-- create in postgreSQL an table for the project, can be "prueba-tecnica"
-
-- Reference your database (in the settings.py file):
-
-```
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": "tablename",
-        "USER": "username_of_the_postgreSQL_database (default:postgres)",
-        "PASSWORD": "password",
-        "HOST": "localhost",
-        "PORT": '5432",
-    }
-}
-```
 
 - Go in the command prompt to the project in the "manage.py" file location, and run:
 
@@ -80,23 +55,24 @@ DATABASES = {
 without Access Token Bearer
 
 ```
+# Login with your superuser credentials.
 {
   "mobile_phone": "prueba",
   "password": "prueba"
 }
 ```
 
-### GetUsers (/api/v1/users/):
+### GetUsers (/api/v1/users):
 > method: GET
 
 without Access Token Bearer
 
-### GetUser (/api/v1/users/{id_user}/) *:
+### GetUser (/api/v1/users/{id_user}) *:
 > method: GET
 
 Access Token Bearer required*
 
-### CreateUser (/api/v1/users/) *:
+### CreateUser (/api/v1/users) *:
 > method: POST
 
 Access Token Bearer required*
@@ -113,7 +89,7 @@ Access Token Bearer required*
 }
 ```
 
-### UpdateUser (/api/v1/users/{id_user}/) *:
+### UpdateUser (/api/v1/users/{id_user}) *:
 > method: PUT
 
 Access Token Bearer required*
@@ -130,7 +106,7 @@ Access Token Bearer required*
 }
 ```
 
-### DeleteUser (/api/v1/users/{id_user}/) *:
+### DeleteUser (/api/v1/users/{id_user}) *:
 > method: DELETE
 
 Access Token Bearer required*
