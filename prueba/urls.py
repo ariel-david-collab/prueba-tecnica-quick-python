@@ -22,18 +22,13 @@ from prueba.apps.apiUsers.api.viewsets import *
 
 urlpatterns = [
     path(
-        "admin/", 
+        "admin", 
         admin.site.urls
     ),
     path(
-        "api/v1/users/login/", 
+        "api/v1/users/login", 
         MyTokenObtainPairView.as_view(), 
         name="token_obtain_pair"
-    ),
-    path(
-        "api/v1/users/refresh/", 
-        jwt_views.TokenRefreshView.as_view(),
-        name="token_refresh"
     ),
     path(
         "api/v1/",
