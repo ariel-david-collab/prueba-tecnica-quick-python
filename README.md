@@ -72,9 +72,9 @@ DATABASES = {
     > python manage.py runserver
     ```
 
-## End-points
+## End-points:
 
-### Login (/api/v1/users/login)
+### Login (/api/v1/users/login):
 > method: POST
 
 without Access Token Bearer
@@ -86,17 +86,17 @@ without Access Token Bearer
 }
 ```
 
-### GetUsers (/api/v1/users/)
+### GetUsers (/api/v1/users/):
 > method: GET
 
 without Access Token Bearer
 
-### GetUser (/api/v1/users/{id_user}/)
+### GetUser (/api/v1/users/{id_user}/) *:
 > method: GET
 
 Access Token Bearer required*
 
-### CreateUser (/api/v1/users/)
+### CreateUser (/api/v1/users/) *:
 > method: POST
 
 Access Token Bearer required*
@@ -113,7 +113,7 @@ Access Token Bearer required*
 }
 ```
 
-### UpdateUser (/api/v1/users/{id_user}/)
+### UpdateUser (/api/v1/users/{id_user}/) *:
 > method: PUT
 
 Access Token Bearer required*
@@ -130,7 +130,7 @@ Access Token Bearer required*
 }
 ```
 
-### DeleteUser (/api/v1/users/{id_user}/)
+### DeleteUser (/api/v1/users/{id_user}/) *:
 > method: DELETE
 
 Access Token Bearer required*
